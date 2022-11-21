@@ -1,0 +1,653 @@
+.fundo{ 
+    background:url(fundorosinha2.jpg);
+    background-size: auto;
+}
+
+#menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color:#de3163;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+li{
+    margin-left: 25px;
+}
+
+#menu ul li a{
+    color: black;
+    padding:   16px ;
+    text-decoration: none;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+.menu li a:hover{
+    background:pink;
+    color:black;
+    text-shadow: 0px 0px 0px black;
+    margin: 0;
+}
+
+.menu li ul{
+    position: relative;
+    top: 20px;
+    left: 0;
+    display: none;
+}
+
+.menu li ul li{
+    display: block;
+    border: 15px solid black;
+    width: 150px;
+}
+menu img{
+    padding-left: 20px;
+}
+
+.inicio{
+    margin-top: 55px;
+}
+            /*quem-somos*/
+#quem-somos{
+    display:flex;
+    right: 25%;
+    left: 10%;
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+}
+#coluna-quem{
+    width: 100%;
+    height: 335px;
+    margin: 0px 0px 15px;
+    padding: 10px 15px;
+    display: flex;
+
+}
+.somos-box{
+    text-align: center;
+    background: #de3163;
+    height: 370px;
+    border-radius: 100px;
+}
+.somos-box a{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#tamanho-somos{
+    margin-top: 0;
+    border-radius: 100px;
+
+}
+
+/* feed */
+
+.comment-box,
+.post-comment .list{
+    background: #de3163;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px #002;
+}
+
+.comment-session{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.post-comment .list {
+   width: 100%;
+   margin-bottom: 12px;
+   padding-bottom: 100px;
+
+}
+
+.post-comment .list .user{
+    display: flex;
+    padding: 8px;
+    overflow: hidden;
+         
+ 
+}
+
+.post-comment .list .user img {
+    height: 38px;
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comment-session .name {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.post-comment .list .day{
+    font-size: 12px;
+
+}
+
+.post-comment .comment-post {
+padding: 0 0 15px 58px;
+}
+
+.comment-box{
+    padding: 10px;
+    overflow: hidden;
+}
+
+.comment-box .user{
+    display: flex;
+    width: min-content;
+}
+
+.comment-box .image img{
+
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comment-box textarea{
+    width: -webkit-fill-available;
+    height: 100px;
+    margin:0;
+    padding: 5px;
+    resize: inherit;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px ;
+
+}
+
+.comment-box .comment-submit{
+    float: right;
+    padding: 7px 10px;
+    border: none;
+    background: rgb(46, 125, 190);
+    color: #eee;
+    cursor: pointer;
+    border-radius: 3px;
+    padding-top: 5px;
+}
+
+.comment-box .comment-submit:hover{
+background: #009cff;
+}
+
+@media screen and (max-width:650px){
+    .comment-session{width: 100%}
+}
+
+.scroll-bg{
+    background: #de3163;
+    width: 750px;
+    margin:15px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px 0 #002;
+}
+
+.scroll-div{
+    width: 750px;
+    background: #eee;
+    height:200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 8px;
+    padding: 2px;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 2px #002;
+}
+.scroll-object{
+    color: black;
+    font-family: arial;
+    font-size: 15px;   
+}
+
+    /* contato */
+    .contate{
+    text-align: center;
+    justify-content: center;
+    }
+.contatos{
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 50%;
+    height: 315px;
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 60px;
+    }
+.contatos input{
+        border-radius: 10px;
+        padding: 7px 22px;
+        font-size: 22px;
+        border: 1px solid black;
+        background: #eee;
+        font-family: initial;
+        text-align: center;
+    }
+    
+.contatos input:focus{
+        border-radius: 50px;
+    }
+    .contatos button{
+        color: black;
+    background: #eee;
+    font-size: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 7px 22px;
+    border-radius: 10px;
+    text-align: center;
+    }
+    
+
+    #logo{
+        margin-left: 150px;
+    }
+    
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 10vh;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+    }
+    .text{
+        font-size: 55px;
+        color: black;
+    }
+    .paragrafo{
+        color:white;
+        margin-bottom: 50px;
+    }
+    .btn{
+        padding: 15px 55px;
+        background: cyan;
+        text-decoration: none;
+        color: rgb(8, 8, 8);
+        font-size: 18px;
+        transition: all 0.5s;
+    }
+        
+    /* Carrosel */
+.carrossel{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 800%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: 2s;
+    transition: 5ms;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.manual-navigation{
+    width: 800px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 15px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+    #radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    width: 800px;
+    margin-top: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 15px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgb(233, 54, 84);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgb(233, 54, 84);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgb(233, 54, 84);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgb(233, 54, 84);
+}
+    /* rodape */
+#rodape{
+    text-align: center;
+    border: 1px solid pink;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgba(221, 205, 216, 0.959);
+    width: 100%;
+    display: inline-block;
+}
+
+#letras{
+    text-align: center;
+    align-items: center;
+}
+
+    /* coluna de bolos*/
+
+#coluna{
+    width: 100%;
+    height: 335px;
+    margin: 0px 0px 15px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.bolo-box{
+    text-align: center;
+    background: #de3163;
+    height: 340px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.btn-bolos{
+    border-radius: 50px ;
+    color: black;
+    background: rgb(252, 255, 253);
+    padding: 4px 30px;
+}
+
+#btn-montar{
+    text-align: center;
+    border: 1px solid black;
+    text-decoration: none;
+    background: #eee;
+    border-radius: 50px;
+    margin-top: 5px;
+    width: 20% ;
+    height: 30px; 
+    margin-left: 40%;
+}
+
+#btn-montar a{
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+#organizar-quadrado{
+    display:flex;
+    right: 25%;
+    left: 10%;
+    width: 100%;
+    padding: 5px;
+}
+
+.bolo-box a{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#tamanho{
+    margin-top: 6px;
+
+}
+
+           /* encomendas*/
+#cabeçalho{
+    text-align: center;
+}
+
+#encomenda{
+    font-size: 24px;
+    font-family: monospace;
+    display: flex;
+    padding-top: 2px ;
+}
+
+#encomenda h1{
+    text-align: center;
+}
+
+.decoracao{
+    border-radius: 10px;
+    width: 170px;
+    height: 25px;
+    text-align: center;
+}
+
+#bloco{
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: #de3163;
+}
+
+#bloco input{
+    margin-top: 10px;
+}
+
+#bloco h3{
+    text-align: center;
+}
+
+.btn-encomendar{
+    border-radius: 50px ;
+    color: black;
+    border: 1px solid black;
+    background: rgb(252, 255, 253);
+    padding: 15px 70px;
+    text-decoration: none;
+    margin-left:120px;
+    font-size: 20px;
+}
+
+         /* cadastro*/
+.cadastro{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-top: 30px;
+    border-radius: 10px;
+    align-items: center;
+    background: #fff;
+    width: 50% ;
+    height: 500px;
+    margin-left: 25%;  
+}
+.cadastro input{
+    border-radius: 10px;
+    padding: 7px 22px;
+    font-size: 22px;
+    background: #eee;
+    font-family: initial;
+    text-align: center;
+}
+.cadastro input:focus{
+    border-radius: 50px;
+}
+
+#cadastrado{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background: #fff;
+    width: 50% ;
+    height: 65px;
+    margin-left: 25%;
+}
+
+#cadastrado a{
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: initial;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(46, 46, 236);
+}
+            /*login*/
+.login{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 50px;
+    align-items: center;
+    background: #fff;
+    width: 50% ;
+    height: 315px;
+    margin-left: 25%;
+    border: 1px solid black;
+}
+
+.login input{
+    border-radius: 10px;
+    padding: 7px 22px;
+    font-size: 22px;
+    border: 1px solid black;
+    background: #eee;
+    font-family: initial;
+    text-align: center;
+}
+
+.login input:focus{
+    border-radius: 50px;
+}
+
+#entrada{
+    color: black;
+    background: #eee;
+    font-size: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 7px 22px;
+    border-radius: 10px;
+}
+
+#esqueceu{
+    text-decoration: none;
+    color: #009cff;
+}
+/* esqueci a senha*/
+
+.senha{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 50px;
+    align-items: center;
+    background: #fff;
+    width: 50% ;
+    height: 315px;
+    margin-left: 25%;
+    border:  1px solid black;
+}
+.senha input{
+border-radius: 10px;
+padding: 7px 22px;
+font-size: 20px;
+border: 1px solid black;
+background: #eee;
+font-family: initial;
+text-align: center;
+}
+.senha input:focus{
+    border-radius: 50px;
+}
+ 
+#senha{
+    font-size: 20px;
+}
+
+
