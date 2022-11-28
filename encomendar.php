@@ -39,37 +39,37 @@ if(!isset($_SESSION['id'])) {
     <div>
         <br><br>
         <section id="encomenda">
-        <form name="form" method="POST" action="salvarencomenda.php">
+        <form onchange="CalculaValor(window.event)" name="form" method="POST" action="salvarencomenda.php">
         <h1>Encomende seu bolo</h1>
             <div id="bloco">
             <h3>Massas:</h3>
             <input type="radio" id="chocolateMassa" name="massas" value="Chocolate">
-            <label for="chocolateMassa">Chocolate</label><br>
+            <label for="chocolateMassa">Chocolate - R$45</label><br>
             <input type="radio" id="baunilhaMassa" name="massas" value="Baunilha">
-            <label for="baunilhaMassa">Baunilha</label><br>
+            <label for="baunilhaMassa">Baunilha - R$20</label><br>
             <input type="radio" id="redVelvetMassa" name="massas" value="RedVelvet">
-            <label for="redVelvetMassa">Red Velvet</label><br>
+            <label for="redVelvetMassa">Red Velvet - R$55</label><br>
             <input type="radio" id="cenouraMassa" name="massas" value="Cenoura">
-            <label for="cenouraMassa">Cenoura</label>
+            <label for="cenouraMassa">Cenoura - R$32</label>
             <br>
             <br>
             </div>
             <div id="bloco">
             <h3>Recheios:</h3>
-            <input type="radio" id="chocolate" name="recheios" value="Chocolate">
-            <label for="chocolate">Chocolate</label><br>
+            <input type="radio" id="chocolate" name="recheios" value="ChocolateRecheio">
+            <label for="chocolate">Chocolate - R$12</label><br>
             <input type="radio" id="morango" name="recheios" value="Morango">
-            <label for="morango">Morango</label><br>
+            <label for="morango">Morango - R$9</label><br>
             <input type="radio" id="coco" name="recheios" value="Coco">
-            <label for="coco">Coco</label><br>
+            <label for="coco">Coco - R$8</label><br>
             <input type="radio" id="ninho" name="recheios" value="Ninho">
-            <label for="ninho">Ninho</label><br>
+            <label for="ninho">Ninho - R$11</label><br>
             <input type="radio" id="nutella" name="recheios" value="Nutella">
-            <label for="nutella">Nutella</label><br>
+            <label for="nutella">Nutella - R$16</label><br>
             <input type="radio" id="doceDeLeite" name="recheios" value="DoceDeLeite">
-            <label for="doceDeLeite">Doce de Leite</label><br>
+            <label for="doceDeLeite">Doce de Leite - R$5</label><br>
             <input type="radio" id="menino-menina" name="recheios" value="menino-menina">
-            <label for="menino-menina">Menino-Menina</label><br>
+            <label for="menino-menina">Menino-Menina - R$7</label><br>
             <br>
             </div>
             <div id="bloco">
@@ -100,10 +100,26 @@ if(!isset($_SESSION['id'])) {
             <label for="nao">Retirada</label>
             <br><br>
             </div>
+
+            <section id="preco">
+            <div class='comment-card'>
+            <h2>
+              Valores:
+            </h2>
+            <input class="massaInput" name="value" placeholder="massa" disabled></input>
+            <label for="value" ></label>
+            <input class="recheioInput" name="value" placeholder="recheio" disabled></input>
+            <label for="value" ></label>
+            <input class="totalInput" name="valor" placeholder="TOTAL" style="margin-top:3rem" disabled></input>
+            <label for="value" ></label>
+          </div>
+          <div class="encomendar">
+          </div>
             <div class="encomendar">
             <h4><button type="submit" class="btn-encomendar"  onclick="Alerta('encomenda')" >Encomendar</button></h4>
 
 </div>
+</section>
 </div>
         </form>
     </div>

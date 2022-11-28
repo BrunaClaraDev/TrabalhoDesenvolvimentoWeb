@@ -128,7 +128,7 @@ width="235px"   height="240px" sizes="(max-width: 235px) 100vw, 235px"  id="tama
 </section>
 <br><br>
 
-<section class="contatos">
+<section id="contatos" class="contatos">
     <div id="contate">
             <h1>Contate-nos</h1>
             <form action= "salvarContato.php" method="post">

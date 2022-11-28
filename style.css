@@ -523,8 +523,9 @@ background: #009cff;
     background: rgb(252, 255, 253);
     padding: 15px 70px;
     text-decoration: none;
-    margin-left:120px;
+    margin-left:70px;
     font-size: 20px;
+    margin-top: 70px;
 }
 
          /* cadastro*/
@@ -650,4 +651,39 @@ text-align: center;
     font-size: 20px;
 }
 
+/* precos */
+
+.comment-card {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-left: 8px;
+    height: 15rem;
+    width: 25rem;
+    border-radius: 15px;
+    background-color:#de3163 ;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.336);
+    text-shadow: 1x 1x 1x #100C87;
+    text-align: center;
+    color: black;
+  }
+  
+  .comment-card input {
+    height: 1.3rem;
+    width: 10rem;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    border: none;
+    border-bottom: 0.1rem solid black;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    cursor: default;
+    text-align: center;
+  }
+
+#preco{
+    color: black;
+    display: flex;
+}
 

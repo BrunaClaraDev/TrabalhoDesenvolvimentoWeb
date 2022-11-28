@@ -46,3 +46,69 @@ function nextimage(){
     document.getElementById("radio"+count).checked = true;
 }
 
+function CalculaValor(event) {
+    let massaInput = document.getElementsByClassName('massaInput')
+    let recheioInput = document.getElementsByClassName('recheioInput')
+    let totalInput = document.getElementsByClassName('totalInput')
+  
+    switch(event.target.value) {
+      case 'Chocolate': {
+        massaInput.value.placeholder = 'massa - R$45'
+        break;
+      }
+      case 'Baunilha': {
+        massaInput.value.placeholder = 'massa - R$20'
+        break;
+      }
+      case 'RedVelvet': {
+        massaInput.value.placeholder = 'massa - R$55'
+        break;
+      }
+      case 'Cenoura': {
+        massaInput.value.placeholder = 'massa - R$32'
+        break;
+      }
+      case 'ChocolateRecheio': {
+        recheioInput.value.placeholder = 'recheio - R$12'
+        break;
+      }
+      case 'Morango': {
+        recheioInput.value.placeholder = 'recheio - R$9'
+        break;
+      }
+      case 'Coco': {
+        recheioInput.value.placeholder = 'recheio - R$8'
+        break;
+      }
+      case 'Ninho': {
+        recheioInput.value.placeholder = 'recheio - R$11'
+        break;
+      }
+      case 'Nutella': {
+        recheioInput.value.placeholder = 'recheio - R$16'
+        break;
+      }
+      case 'DoceDeLeite': {
+        recheioInput.value.placeholder = 'recheio - R$5'
+        break;
+      }
+      case 'menino-menina': {
+        recheioInput.value.placeholder = 'recheio - R$7'
+        break;
+      }
+      default: break;
+    }
+    let total = `${massaInput.value.placeholder} ${recheioInput.value.placeholder}`
+    total = total.replace(/[^0-9|-]/g, '').split('-')
+    let result = 0
+  
+    for (let i = 0; i < total.length; i++) {
+      if(!total[i]) continue
+      let value = +total[i]
+  
+      if(value) {
+        result += value
+      }
+    }
+    totalInput.valor.placeholder = `TOTAL - R$${result}` 
+  }
